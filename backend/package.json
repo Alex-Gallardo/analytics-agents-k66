@@ -1,0 +1,21 @@
+{
+  "name": "k66-analytics-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "check": "node --check src/server.js && node --check src/sql.js && node --check src/hana.js"
+  },
+  "dependencies": {
+    "@sap/hana-client": "^2.30.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "exceljs": "^4.4.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
